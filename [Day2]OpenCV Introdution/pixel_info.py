@@ -12,7 +12,7 @@ def onMouse(event, x, y, flags, param):
         print("(x, y) = (%d, %d)"%(x,y),end = " ")
         print("(R, G, B) = (%3d, %3d, %3d)"%(img[x,y,2],img[x,y,1],img[x,y,0]))
 
-img = cv2.imread("D:\Desktop\IThome\lena.bmp", -1)
+img = cv2.imread("Your File Path", -1)
 cv2.namedWindow("lena")
 cv2.setMouseCallback("lena", onMouse)
 cv2.imshow("lena",img)
